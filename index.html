@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Structure Visualization</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Data Structure Visualization</h1>
+        <div class="controls">
+            <select id="data-structure" onchange="changeStructure()">
+                <option value="array">Array</option>
+                <option value="stack">Stack</option>
+                <option value="queue">Queue</option>
+                <option value="linkedlist">Linked List</option>
+            </select>
+            <input type="text" id="input-value" placeholder="Enter value">
+            <button onclick="addElement()">Add</button>
+            <button onclick="removeElement()">Remove</button>
+        </div>
+        <div id="visualization"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
